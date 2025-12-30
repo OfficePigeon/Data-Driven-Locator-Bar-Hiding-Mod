@@ -1,0 +1,8 @@
+{
+  "pack": {
+    "description": "Removes carved pumpkin from the list of items that hide a player on the locator bar",
+	"pack_format": 88,
+    "min_format": 88,
+    "max_format": 95
+  }
+}
