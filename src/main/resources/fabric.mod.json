@@ -1,0 +1,28 @@
+{
+	"schemaVersion": 1,
+	"id": "wich_data-driven-locator-bar-hiding",
+	"version": "${version}",
+	"name": "Data Driven Locator Bar Hiding",
+	"description": "Makes the items that allow players to hide from the locator bar data driven",
+	"authors": [ "dovewich" ],
+	"contact": {
+		"homepage": "https://www.wich.fun/",
+		"sources": "https://github.com/OfficePigeon/Data-Driven-Locator-Bar-Hiding-Mod",
+		"issues": "https://github.com/OfficePigeon/Data-Driven-Locator-Bar-Hiding-Mod/issues"
+	},
+	"license": "",
+	"icon": "assets/wich/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [ "fun.wich.DataDrivenLocatorBarHidingMod" ]
+	},
+	"mixins": [
+		"wich.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": ">=1.21.9",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
