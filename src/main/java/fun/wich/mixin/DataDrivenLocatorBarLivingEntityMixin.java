@@ -18,12 +18,12 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(LivingEntity.class)
-public abstract class LivingEntityMixin extends Entity implements Attackable, ServerWaypoint {
+public abstract class DataDrivenLocatorBarLivingEntityMixin extends Entity implements Attackable, ServerWaypoint {
 	@Shadow public abstract AttributeContainer getAttributes();
 	@Shadow protected abstract void updateAttribute(RegistryEntry<EntityAttribute> attribute);
 	@Shadow public abstract ItemStack getEquippedStack(EquipmentSlot slot);
 
-	public LivingEntityMixin(EntityType<?> type, World world) { super(type, world); }
+	public DataDrivenLocatorBarLivingEntityMixin(EntityType<?> type, World world) { super(type, world); }
 
 	@Inject(method="tickStatusEffects", at=@At("HEAD"))
 	private void DataDrivenLocatorBarHiding_tickStatusEffects(CallbackInfo ci) {

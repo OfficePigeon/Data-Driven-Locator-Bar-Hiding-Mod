@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(Waypoint.class)
-public interface WaypointMixin {
+public interface DataDrivenLocatorBarWaypointMixin {
 	//Removes the hard-coded attribute modifier for disabling waypoint tracking
 	@Inject(method="disableTracking", at=@At("HEAD"), cancellable=true)
 	private static void DataDrivenLocatorBarHiding_disableTracking(Item.Settings settings, CallbackInfoReturnable<Item.Settings> cir) {
