@@ -17,7 +17,7 @@
 		"main": [ "fun.wich.DataDrivenLocatorBarHidingMod" ]
 	},
 	"mixins": [
-		"wich.mixins.json"
+		"wich.datadrivenlocatorbar.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.17.3",
